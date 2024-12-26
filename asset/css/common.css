@@ -31,6 +31,10 @@ body {
     font-family: var(--font-family-bold) !important;
 }
 
+.helvetica-neue-regular{
+    font-family: var(--font-family-regular) !important;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -140,6 +144,27 @@ video{
     padding-top: var(--height-header-desktop);
     min-height: 10vh;
 }
+
+.fs-24px{
+    font-size: 24px;
+    @media screen and (max-width: 1440px) {
+        font-size: 18px;
+    }
+}
+
+.fs-20px{
+    font-size: 20px;
+    @media screen and (max-width: 1440px) {
+        font-size: 15px;
+    }
+}
+
+.fs-16px{
+    font-size: 16px;
+    @media screen and (max-width: 1440px) {
+        font-size: 12px;
+    }
+}
 .menu-header {
     height: 110px;
     display: flex;
@@ -171,20 +196,11 @@ video{
     gap: 40px;
     .menu-header__list-item{
         a{
-            font-size: 20px;
             color: var(--primary);
-            font-family: var(--font-family-bold);
         }
         &:hover{
             a{
                 color: var(--second);
-            }
-        }
-    }
-    @media screen and (max-width: 1440px) {
-        .menu-header__list-item{
-            a{
-                font-size: 15px;
             }
         }
     }
@@ -196,14 +212,7 @@ video{
     gap: 4px;
     cursor: pointer;
     span{
-        font-size: 20px;
         color: var(--primary);
-        font-family: var(--font-family-bold);
-    }
-    @media screen and (max-width: 1440px){
-        span{
-            font-size: 15px;
-        }
     }
 }
 .banner-item{
@@ -219,6 +228,7 @@ video{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(255, 255, 255, 1);
     .footer-upper{
         display: flex;
         align-items: center;
@@ -244,20 +254,35 @@ video{
                     }
                 }
                 .footer-description{
-                    font-size: 24px;
                     color: rgba(25, 25, 25, 1);
                 }
                 .footer-register-title{
-                    font-size: 24px;
                     color: rgba(25, 25, 25, 1);
-                    font-family: var(--font-family-bold);
                 }
-                @media screen and (max-width: 1440px) {
-                    .footer-description{
-                        font-size: 18px;
+                .subscription-box{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid rgba(25, 25, 25, 1);
+                    input{
+                        color: rgba(25, 25, 25, 1);
                     }
-                    .footer-register-title{
-                        font-size: 18px;
+                    .btn-primary{
+                        width: 157px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 4px;
+                        background: rgba(241, 75, 35, 1);
+                        border-radius: 30px;
+                        border: none;
+                        cursor: pointer;
+                        span{
+                            font-size: 16px;
+                            color: rgba(250, 250, 250, 1);
+                        }
                     }
                 }
             }

@@ -31,6 +31,10 @@ body {
     font-family: var(--font-family-bold) !important;
 }
 
+.helvetica-neue-regular{
+    font-family: var(--font-family-regular) !important;
+}
+
 img {
     width: 100%;
     height: auto;
@@ -137,4 +141,25 @@ video{
     padding-top: 8rem;
     padding-top: var(--height-header-desktop);
     min-height: 10vh;
+}
+
+.fs-24px{
+    font-size: 24px;
+    @media screen and (max-width: 1440px) {
+        font-size: 18px;
+    }
+}
+
+.fs-20px{
+    font-size: 20px;
+    @media screen and (max-width: 1440px) {
+        font-size: 15px;
+    }
+}
+
+.fs-16px{
+    font-size: 16px;
+    @media screen and (max-width: 1440px) {
+        font-size: 12px;
+    }
 }
